@@ -11,13 +11,13 @@
     <div class="col-sm-6 my-2">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Title: {{post.title}}</h5>
-            <p class="card-text">Content: {{post.content}}</p>
+            <h5 class="card-title">Title: {{event.title}}</h5>
+            <p class="card-text">Content: {{event.content}}</p>
             {% comment %}
-            <p class="card-text">Author: {{post.author.name}}</p>
+            <p class="card-text">Author: {{event.category.name}}</p>
             {% endcomment %}
             <h5 class="card-text">
-              Category: {%for catG in post.category.all %} {{catG.name}} {% endfor%}
+              Category: {%for catG in event.category.all %} {{catG.name}} {% endfor%}
             </h5>
             
           </div>
